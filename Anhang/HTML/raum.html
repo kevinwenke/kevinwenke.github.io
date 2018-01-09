@@ -1,0 +1,59 @@
+<!Doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>OptiFit Lichtenstein</title>
+  <link rel="icon" href="../Bilder/logoicon.jpeg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;">
+  <link href="../CSS/style1.css" rel="stylesheet" type="text/css">
+  <link href="../CSS/raum.css" rel="stylesheet" type="text/css">
+  <link href="../src/css/lightbox.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.menubutton').click(function(){
+			$('nav').slideToggle('slow');
+		});
+	});
+  </script>
+ </head>
+ <body>
+  <section id="menubar">
+		<ul>
+			<li><a class="menubutton" href="#menu"><img src="../Bilder/menu.png"></a></li>
+		</ul>
+  </section>
+  <header>
+	<img src="../Bilder/logo3.png">
+  </header>
+  <nav class="nav">
+      <ul>
+	   <li><a href="../../index.html">Home</a></li>
+	   <li><a class="active" href="raum.html">Das Studio</a></li>   
+	   <li><a href="oeffnungszeiten.html">Öffnungszeiten</a></li>
+       <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+  </nav>
+  <section id="main">
+	<article>
+		<h2>Folgende Bilder sollen einen kurzen Einblick geben:</h2>
+		<a href="../Bilder/training2.jpeg" data-lightbox="roadtrip" data-title="Training an einer großen Auswahl an Geräten"><img src="../Bilder/training2_kl.jpg" title="Auswahl an Geräten"></a>
+		<a href="../Bilder/cardio.jpeg" data-lightbox="roadtrip" data-title="Große Trainingsmöglichkeiten im Cardiobereich"><img src="../Bilder/cardio_kl.jpg" title="Blick auf Cardiobereich"></a>
+		<a href="../Bilder/cardio2.jpeg" data-lightbox="roadtrip" data-title=""><img src="../Bilder/cardio2_kl.jpg" title="Blick vom Cardiobereich"></a>
+		<a href="../Bilder/Sauna.jpeg" data-lightbox="roadtrip" data-title="Unsere Sauna für die perfekte Balance! Werft doch einfach selbst einen Blick bei Eurem nächsten Besuch hinein!"><img src="../Bilder/Sauna_kl.jpg" title="Sauna von außen"></a>
+		<a href="../Bilder/entspannung.jpeg" data-lightbox="roadtrip" data-title="Für Entspannung sorgen wir außerdem!"><img src="../Bilder/entspannung_kl.jpg" title="Entspannung nach einem Saunabesuch"></a>
+		<a href="../Bilder/hanteln.jpeg" data-lightbox="roadtrip" data-title="Trainieren könnt ihr mit einer großen Auswahl an Hanteln!"><img src="../Bilder/hanteln_kl.jpg" title="Training mit großer Auswahl an Hanteln"></a>
+		<a href="../Bilder/grhanteln.jpeg" data-lightbox="roadtrip" data-title="Stolz sind wir auch auf unsere 52,5kg Hanteln!"><img id="bottom" src="../Bilder/grhanteln_kl.jpg" title="Unsere 52,5kg Hanteln!"></a>
+	</article>
+	
+  </section>
+   <footer>
+   <ul>
+	<li>&copy; OptiFit Lichtenstein</li>
+	<li><a href="datenschutz.html">Datenschutz</a></li>
+	<li><a href="Impressum.html">Impressum</a></li>
+   </ul>
+  </footer>
+	<script src="../src/js/lightbox.js"></script>
+ </body>
+</html>
