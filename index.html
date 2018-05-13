@@ -1,64 +1,171 @@
-<!Doctype html>
+<!doctype html>
 <html>
  <head>
-  <meta charset="UTF-8">
-  <title>OptiFit Lichtenstein</title>
-  <link rel="icon" href="Anhang/Bilder/logoicon.jpeg">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;">
-  <link href="Anhang/CSS/style1.css" rel="stylesheet" type="text/css">
-  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript">
-	$(document).ready(function(){
-		$('.menubutton').click(function(){
-			$('nav').slideToggle('slow');
-		});
-	});
-  </script>
+   <meta charset="utf-8">
+   <title>Anwendungsfalldiagramm</title>
+   <link rel="icon" href="Bilder/dia.png">
+   <link rel="stylesheet" type="text/css" href="css/style_neu.css">
+   <link href="src/css/lightbox.css" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+    $(document).ready(function(){
+     $("a").on('click', function(event) {
+       if (this.hash !== "")
+       {
+        event.preventDefault();
+         var hash = this.hash;
+          $('html, body').animate({
+           scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+       } // End if
+     });
+    });
+   </script>
  </head>
  <body>
-  
- <section id="menubar">
-		<ul>
-			<li><a class="menubutton" href="#menu"><img src="Anhang/Bilder/menu.png"></a></li>
-		</ul>
-  </section>
-  <header>
-	<img src="Anhang/Bilder/logo3.png">
-  </header>
-  <nav class="nav">
-      <ul>
-	   <li><a class="active" href="index.html">Home</a></li>
-	   <li><a href="Anhang/HTML/raum.html">Das Studio</a></li>   
-	   <li><a href="Anhang/HTML/oeffnungszeiten.html">Öffnungszeiten</a></li>
-       <li><a href="Anhang/HTML/kontakt.html">Kontakt</a></li>
-      </ul>
-  </nav>
-  <section id="main">
-   <article>	
-	<h2>Herzlich Willkommen im OptiFit Lichtenstein!</h2>
-	<img src="Anhang/Bilder/Training1.jpeg">
-	<p> Endlich gibt es uns wieder! Neu, anders, und doch vetraut. OptiFit ist Euer Fitnessclub im "Auersberg Center Lichtenstein" in Sankt Egidien.
-	 Wir unterstützen Euch ab Januar 2018 auf über 500 Quadratmetern bei der Erreichung Eurer sportlichen und gesundheitlichen Ziele! Zudem könnt Ihr in unserem Sauna-Wellnessbreich wunderbar entpannen. Es lohnt sich!<br>
-    </p>
-   </article>
-   <aside>
-    <section>
-	  <h3>Schon Neujahresvorsätze für 2018? </h3>
-	  <p>Mit uns habt Ihr den perfekten Start ins neue Jahr! Ihr könnt täglich unsere Auswahl an Sportgeräten nutzen oder in unserem Sauna-Wellnessbereich entspannen. Probiert es doch einfach mal aus!</p>
-    </section>
-	<section>
-		<div>
-		<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOptiFit-Lichtenstein-317804105384870%2F&tabs=timeline&width=220&height=300&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="220" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-		</div>
-	</section>
-   </aside>
-  </section>
- <footer>
-	<ul>
-	<li>&copy; OptiFit Lichtenstein</li>
-	<li><a href="Anhang/HTML/datenschutz.html">Datenschutz</a></li>
-	<li><a href="">Impressum</a></li>
-	</ul>
- </footer> 
+   <!--=============================================Startseite=========================================================-->
+   <div id="startseite">
+     <h1>Anwendungsfalldiagramm - Use Case Diagramm</h1>
+     <h2>-eine Präsentation von Kevin Wenke-</h2>
+     <a href="#1"><input type="button" value="Los geht's!"></a>
+   </div>
+   <div id="1"></div>
+   <!--========================================Inhaltsverzeichnis======================================================-->
+   <div id="pages">
+     <div id="container">
+       <h2>Inhaltsverzeichnis</h2>
+       <ol>
+           <li>Theorie
+               <ol>
+                 <li>Definition</li>
+                 <li>Elemente</li>
+                 <li>Herangehensweise</li>
+               </ol>
+           </li>
+           <li> Beispiele</li>
+           <li> Dia-Umsetzung </li>
+           <li> Quellen + Fragen zum Thema</li>
+       </ol>
+
+     </div>
+     <a href="#2"><input type="button" value="Definition"></a>
+   </div>
+   <div id="2"></div>
+   <!--=============================================zweite Seite========================================================-->
+   <div id="pages">
+     <div id="container">
+       <h2>Was sind Anwendungsfalldiagramme?</h2>
+       <p>
+         <ul>
+           <li> auch Use Case Diagramm genannt</li>
+           <li> beschreibt das externe Systemverhalten aus Anwendersicht </li>
+           <li> stellen das geplante System, die Akteure, die Verwendung des geplanten Systems und die Beziehungen zwischen Akteuren und Anwendungsfällen dar </li>
+           <li> geben Auskunft, was ein geplantes System aus sicht des Benutzers leisten soll</li>
+         </ul>
+       </p>
+     </div>
+     <a href="#3"><input type="button" value="Elemente"></a>
+   </div>
+   <div id="3"></div>
+   <!--=============================================dritte Seite========================================================-->
+   <div id="pages">
+     <div id="container">
+       <h2>Das sind die Elemente von Use Case Diagrammen</h2>
+       <p>
+         <table>
+           <tr>
+             <td style="width:15%;text-align:center;"><a href="Bilder/UC_system.gif" data-lightbox="roadtrip" data-title="Das System"><img src="Bilder/UC_system.gif"></a></td>
+             <td style="width:35%;">System</td>
+             <td style="width:15%;text-align:center;"><a href="Bilder/Uml-useCase.png"data-lightbox="roadtrip" data-title="Die Anwendungsfälle, sogenannte Use Cases"><img src="Bilder/Uml-useCase.png"></a></td>
+             <td style="width:35%;">Use Case (Anwendungsfall)</td>
+           </tr>
+           <tr>
+             <td style="text-align:center;"><a href="Bilder/UC_akteur_uml.gif" data-lightbox="roadtrip" data-title="Die Akteure"><img src="Bilder/UC_akteur_uml.gif"></a></td>
+             <td>Akteur</td>
+             <td style="text-align:center;"><a href="Bilder/UC_beziehung.gif" data-lightbox="roadtrip" data-title="Die Assoziationen, sozusagen Beziehungen"><img src="Bilder/UC_beziehung.gif"></a></td>
+             <td >Assoziation</td>
+           </tr>
+           <tr>
+             <td style="text-align:center;"><a href="Bilder/UC_include.gif" data-lightbox="roadtrip" data-title="Die include-Assoziation"><img src="Bilder/UC_include.gif"></a></td>
+             <td>include-Assoziation</td>
+             <td style="text-align:center;"><a href="Bilder/UC_extend.gif" data-lightbox="roadtrip" data-title="Die extend-Assoziation"><img src="Bilder/UC_extend.gif"></a></td>
+             <td >extend-Assoziation</td>
+           </tr>
+           <tr>
+             <td style="text-align:center;"><a href="Bilder/Uml-UseCase-Extend.png" data-lightbox="roadtrip" data-title="Die extension points, Bedingungen für die extend-Assoziation"><img src="Bilder/Uml-UseCase-Extend.png"></a></td>
+             <td>Extension point</td>
+ 			       <td style="text-align:center;"><a href="Bilder/UC_bspIncludeExtend.gif" data-lightbox="roadtrip" data-title="Die extension points, Bedingungen für die extend-Assoziation"><img src="Bilder/UC_bspIncludeExtend.gif"></a></td>
+             <td>Beispiel für include + extend </td>
+           </tr>
+         </table>
+
+       </p>
+     </div>
+     <a href="#4"><input type="button" value="Bedeutung"></a>
+   </div>
+   <div id="4"></div>
+   <!--=============================================vierte Seite========================================================-->
+   <div id="pages">
+     <div id="container">
+       <h2>Bedeutung des Use Case Diagramms</h2>
+       <p>
+         <ul>
+           <li>hilft bei Festlegung von Anforderungen an ein Softwaresystem</li>
+           <li>dient als gutes Kommunikationsmittel zwischen Systemanalytiker, Anwender und Entwickler</li>
+           <li>zeigt Funktionalität aus Sicht des zukünftigen Nutzers betrachtet (für Analyse betriebsintern bzw. mit dem Kunden)</li>
+           <li>Implementierungsschritte müssen nicht beachtet werden</li>
+         </ul>
+       </p>
+     </div>
+     <a href="#5"><input type="button" value="Zusammenhang"></a>
+   </div>
+   <div id="5"></div>
+   <!--=============================================fünfte Seite========================================================-->
+   <div id="pages">
+     <div id="container">
+       <h2>Zusammenhang</h2>
+       <p>
+         <ul>
+          <li>Use Cases stellen eine Menge von Systemfunktionen dar</li>
+          <li>diese müssen während des Projektes detaillierter beschrieben werden </li>
+          <li>möglich durch andere Diagramme oder zusammenhängende Texte</li>
+          <li>aus Spezifikationen können Klassenkandidaten abgeleitet werden</li>
+         </ul>
+       </p>
+     </div>
+     <a href="#6"><input type="button" value="Anwendung"></a>
+   </div>
+   <div id="6"></div>
+   <!--=============================================sechste Seite========================================================-->
+   <div id="pages">
+     <div id="container">
+       <h2>Mögliche Herangehensweise beim Erstellen</h2>
+       <p>
+         <ol start="0">
+          <li>(Besitz eines "Vorprogrammes", das geändert werden soll)</li>
+          <li>Überlegung welcher Vorgang wird betrachtet</li>
+          <li>Überlegung der Teilnehmer</li>
+          <li>Überlegung welche Möglichkeiten stellt das System</li>
+          <li>Verknüpfung Teilnehmer mit Möglichkeiten</li>
+        </ol>
+       </p>
+     </div>
+     <a href="#foot"><input type="button" value="zum nächsten Teil"></a>
+   </div>
+   <!--==============================================Fußzeile==========================================================-->
+      <div id=foot>
+        <ul id="anhang">
+          <li> <sup>&copy;</sup> Kevin Wenke </li>
+          <li>|</li>
+          <li> <a href="anhang/quellen.html">Quellen</a> </li>
+          <li>|</li>
+          <li> <a href="anhang/dia.html">Beispiele</a> </li>
+          <li>|</li>
+          <li> <a href="#startseite">Zum Anfang</a> </li>
+        </ul>
+      </div>
+ <script src="src/js/lightbox.js"></script>
  </body>
-</html>
+ </html>
