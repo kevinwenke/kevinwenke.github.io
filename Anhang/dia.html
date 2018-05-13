@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Anwendungsfalldiagramm</title>
+<link rel="icon" href="../Bilder/dia.png">
+<link rel="stylesheet" type="text/css" href="../css/style_neu.css">
+<link href="../src/css/lightbox.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "")
+    {
+     event.preventDefault();
+      var hash = this.hash;
+       $('html, body').animate({
+        scrollTop: $(hash).offset().top
+       }, 800, function(){
+         window.location.hash = hash;
+       });
+    } // End if
+  });
+ });
+</script>
+</head>
+<body>
+  <div id="pages">
+    <div id="container">
+      <h2>Die Beispiele</h2>
+      <p>
+        <table>
+          <tr>
+            <td><a href="../Bilder/Uml-UseCase-Beispiel1.svg.png" data-lightbox="roadtrip" data-title="https://de.wikipedia.org/wiki/Anwendungsfalldiagramm#/media/File:Uml-UseCase-Beispiel1.svg"><img src="../Bilder/Uml-UseCase-Beispiel1.svg.png"></a></td>
+            <td><a href="../Bilder/Uml-UseCase-Beispiel2.svg.png" data-lightbox="roadtrip" data-title="https://de.wikipedia.org/wiki/Anwendungsfalldiagramm#/media/File:Uml-UseCase-Beispiel2.svg"><img src="../Bilder/Uml-UseCase-Beispiel2.svg.png"></a></td>
+          </tr>
+          <tr>
+            <td><a href="../Bilder/UseCase_bsp3.gif" data-lightbox="roadtrip" data-title="Use Case Diagramm eines Webservers"><img src="../Bilder/UseCase_bsp3.gif"></a></td>
+            <td><a href="../Bilder/UseCase_feier.png" data-lightbox="roadtrip" data-title="https://wiki.thm.de/w/images/thumb/f/fc/UseCase_Beispiel_Einweihungsfeier.png/400px-UseCase_Beispiel_Einweihungsfeier.png"><img src="../Bilder/UseCase_feier.png"></a></td>
+
+          </tr>
+        </table>
+      </p>
+    </div>
+    <a href="Quellen.html"><input type="button" value="Quellen">
+  </div>
+  <script src="../src/js/lightbox.js"></script>
+</body>
+</html>
